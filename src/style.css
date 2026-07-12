@@ -9,6 +9,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+:root {
+  --blue-color: #29ABE2;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -17,24 +21,10 @@ header {
   padding: 0 50px;
 }
 
-.nav__link.is-active {
-  position: relative;
-}
-
-:root {
-  --blue-color: #29ABE2;
-}
-
-.is-active {
-  color: var(--blue-color);
-  position: relative;
-}
-
 .items {
   text-transform: uppercase;
   display: flex;
-  margin-right: 30px;
-  list-style: none
+  list-style: none;
 }
 
 .items li {
@@ -51,8 +41,12 @@ header {
   color: inherit;
 }
 
-.selected {
-color: var(--blue-color);
+.nav__link:hover {
+  color: var(--blue-color);
+}
+
+.nav__link.is-active {
+  color: var(--blue-color);
 }
 
 .is-active::after {
