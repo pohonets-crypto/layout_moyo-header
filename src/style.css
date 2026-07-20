@@ -58,3 +58,7 @@ header {
   height: 4px;
   background-color: var(--blue-color);
 }
+
+.is-blue {
+  color: var(--blue-color);
+}
