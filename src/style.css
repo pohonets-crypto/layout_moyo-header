@@ -1,10 +1,10 @@
 body {
   margin: 0;
+  font-family: Roboto, sans-serif;
 }
 
-body {
-  margin: 0;
-  font-family: Roboto, sans-serif;
+:root {
+  --blue-color: #29ABE2;
 }
 
 .header {
@@ -16,7 +16,7 @@ body {
   align-items: center;
 }
 
-.items {
+.nav__list {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -29,25 +29,7 @@ body {
   margin-right: 30px;
 }
 
-.items:last-child {
-  margin-right: 0;
-}
-
-:root {
-  --blue-color: #29ABE2;
-}
-
-.nav__list {
-  text-transform: uppercase;
-  display: flex;
-  list-style: none;
-}
-
-.items li {
-  margin-right: 30px;
-}
-
-.items li:last-child {
+.nav__item:last-child {
   margin-right: 0;
 }
 
@@ -57,7 +39,7 @@ body {
   position: relative;
   text-decoration: none;
   color: inherit;
-  height: 60px
+  height: 60px;
 }
 
 .nav__link:hover {
